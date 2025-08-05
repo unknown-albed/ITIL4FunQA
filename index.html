@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIL® 4 Foundation Quiz App - Loading...</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .status {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .links {
+            margin-top: 2rem;
+        }
+        
+        .links a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid #ffd700;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .links a:hover {
+            background: #ffd700;
+            color: #333;
+        }
+        
+        .note {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 2rem;
+        }
+    </style>
+    <script>
+        // Auto-refresh every 30 seconds to check if deployment is ready
+        setTimeout(function() {
+            window.location.reload();
+        }, 30000);
+        
+        // Try to detect if the app is deployed and redirect
+        fetch('/ITIL4FunQA/')
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/ITIL4FunQA/';
+                }
+            })
+            .catch(() => {
+                // App not ready yet, keep showing this page
+            });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 ITIL® 4 Foundation Quiz App</h1>
+        
+        <div class="status">
+            <strong>🚀 Deployment in Progress</strong><br>
+            GitHub Pages is setting up your web app...
+        </div>
+        
+        <div class="spinner"></div>
+        
+        <p>Your quiz app is being deployed to GitHub Pages. This usually takes 2-5 minutes.</p>
+        
+        <div class="links">
+            <a href="https://github.com/unknown-albed/ITIL4FunQA" target="_blank">📂 View Repository</a>
+            <a href="https://github.com/unknown-albed/ITIL4FunQA/actions" target="_blank">⚙️ Check Deployment Status</a>
+            <a href="https://github.com/unknown-albed/ITIL4FunQA/releases/latest" target="_blank">📱 Download Android APK</a>
+        </div>
+        
+        <div class="note">
+            <p><strong>Alternative Access:</strong></p>
+            <p>• <strong>Android:</strong> Download APK from releases</p>
+            <p>• <strong>iOS:</strong> Build from source (guide in repository)</p>
+            <p>• <strong>Web:</strong> This page will redirect automatically when ready</p>
+        </div>
+        
+        <p style="margin-top: 2rem; font-size: 0.8rem;">
+            Page will auto-refresh every 30 seconds | Repository made public ✅
+        </p>
+    </div>
+</body>
+</html>
