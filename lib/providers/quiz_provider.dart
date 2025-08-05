@@ -5,7 +5,7 @@ import '../models/question.dart';
 import '../models/quiz_result.dart';
 import '../services/database_service.dart';
 
-enum QuizState { notStarted, inProgress, completed, reviewing }
+enum QuizState { notStarted, loading, inProgress, completed, reviewing, error }
 
 class QuizProvider with ChangeNotifier {
   final DatabaseService _databaseService = DatabaseService();
@@ -18,6 +18,7 @@ class QuizProvider with ChangeNotifier {
   int _timeElapsed = 0; // in seconds
   int? _selectedAnswerIndex;
   bool _showFeedback = false;
+  String? _errorMessage;
 
   // Getters
   List<Question> get questions => _questions;
@@ -32,6 +33,7 @@ class QuizProvider with ChangeNotifier {
   bool get isLastQuestion => _currentQuestionIndex >= _questions.length - 1;
   int get totalQuestions => _questions.length;
   int get questionsAnswered => _currentSession?.results.length ?? 0;
+  String? get errorMessage => _errorMessage;
 
   String get formattedTime {
     final minutes = _timeElapsed ~/ 60;
@@ -43,13 +45,27 @@ class QuizProvider with ChangeNotifier {
       _questions.isNotEmpty ? (_currentQuestionIndex + 1) / _questions.length : 0.0;
 
   Future<void> loadQuestions() async {
+    _state = QuizState.loading;
+    _errorMessage = null;
+    notifyListeners();
+    
     try {
       _questions = await _databaseService.getAllQuestions();
-      _questions.shuffle(); // Randomize question order
+      
+      if (_questions.isEmpty) {
+        _state = QuizState.error;
+        _errorMessage = 'No questions found. Please check your internet connection and try again.';
+      } else {
+        _questions.shuffle(); // Randomize question order
+        _state = QuizState.notStarted;
+      }
+      
       notifyListeners();
     } catch (e) {
-      // Error loading questions - could show user-friendly error message
+      _state = QuizState.error;
+      _errorMessage = 'Failed to load questions. Please check your internet connection and try again.';
       debugPrint('Error loading questions: $e');
+      notifyListeners();
     }
   }
 

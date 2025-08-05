@@ -54,6 +54,10 @@ class QuizSession {
     return DateTime.now().difference(startTime);
   }
 
+  int get timeElapsed {
+    return timeTaken.inSeconds;
+  }
+
   bool get isCompleted => results.length == totalQuestions;
 
   factory QuizSession.fromJson(Map<String, dynamic> json) {
