@@ -27,44 +27,6 @@ A modern Flutter mobile quiz application for testing ITIL® 4 Foundation knowled
 - **Offline Support**: Works completely offline, no internet required
 - **Data Persistence**: Quiz history and preferences saved locally
 
-## 🏗️ Architecture
-
-### Project Structure
-```
-lib/
-├── models/
-│   ├── question.dart          # Question data model
-│   └── quiz_result.dart       # Quiz session and result models
-├── providers/
-│   ├── quiz_provider.dart     # Quiz state management
-│   └── theme_provider.dart    # Theme state management
-├── screens/
-│   ├── home_screen.dart       # Main entry screen
-│   ├── quiz_screen.dart       # Quiz taking interface
-│   ├── results_screen.dart    # Final score display
-│   └── review_screen.dart     # Answer review interface
-├── services/
-│   └── database_service.dart  # SQLite database operations
-├── widgets/
-│   ├── question_card.dart     # Question display component
-│   └── answer_feedback.dart   # Answer feedback component
-└── main.dart                  # App entry point
-```
-
-### Key Components
-
-#### Models
-- **Question**: Represents a quiz question with options, correct answer, and explanation
-- **QuizResult**: Tracks individual question responses
-- **QuizSession**: Manages complete quiz attempts with scoring
-
-#### Providers
-- **QuizProvider**: Manages quiz state, timer, navigation, and scoring logic
-- **ThemeProvider**: Handles light/dark theme switching with persistence
-
-#### Services
-- **DatabaseService**: SQLite operations for questions and quiz history
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -77,8 +39,8 @@ lib/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd itil4_quiz_app
+   git clone https://github.com/yourusername/itil4-foundation-quiz.git
+   cd itil4-foundation-quiz
    ```
 
 2. **Install dependencies**:
@@ -91,140 +53,38 @@ lib/
    flutter run
    ```
 
-### Adding Your Questions
-
-Replace the sample questions in `assets/data/questions.json` with your 40 ITIL® 4 questions:
-
-```json
-{
-  "questions": [
-    {
-      "id": 1,
-      "questionText": "Your question here?",
-      "options": [
-        "Option A",
-        "Option B", 
-        "Option C",
-        "Option D"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Detailed explanation of the correct answer."
-    }
-  ]
-}
-```
-
 ## 📦 Dependencies
 
-### Production Dependencies
 - **flutter**: Flutter SDK
 - **provider**: State management
 - **sqflite**: Local SQLite database
 - **shared_preferences**: Simple data persistence
 - **path**: File path utilities
-- **google_fonts**: Typography enhancements
 
-### Development Dependencies
-- **flutter_test**: Testing framework
-- **flutter_lints**: Code quality rules
+## 🎨 Screenshots
 
-## 🎨 Design System
+*Screenshots will be added here*
 
-### Color Scheme
-- **Primary**: Purple (#6750A4) - ITIL brand-inspired
-- **Success**: Green - Correct answers
-- **Error**: Red - Incorrect answers
-- **Surface**: Material 3 surface colors
+## 🏗️ Architecture
 
-### Typography
-- **Questions**: 18pt, medium weight
-- **Options**: 16pt body text
-- **Explanations**: 14pt with line height 1.4
-
-### Components
-- **Cards**: 16px border radius, 2dp elevation
-- **Buttons**: 12px border radius, consistent padding
-- **Progress**: Linear indicator with smooth animations
-
-## 🔧 Configuration
-
-### Theme Settings
-The app supports three theme modes:
-- **Light**: Default light theme
-- **Dark**: High contrast dark theme  
-- **System**: Follows device preference
-
-### Database Schema
-```sql
--- Questions table
-CREATE TABLE questions(
-  id INTEGER PRIMARY KEY,
-  questionText TEXT NOT NULL,
-  options TEXT NOT NULL,        -- JSON array
-  correctAnswerIndex INTEGER NOT NULL,
-  explanation TEXT NOT NULL
-);
-
--- Quiz sessions table  
-CREATE TABLE quiz_sessions(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  startTime TEXT NOT NULL,
-  endTime TEXT,
-  totalQuestions INTEGER NOT NULL,
-  results TEXT NOT NULL         -- JSON array
-);
-```
-
-## 🚀 Building for Production
-
-### Android
-```bash
-flutter build apk --release
-# or
-flutter build appbundle --release
-```
-
-### iOS
-```bash
-flutter build ios --release
-```
-
-### Web (if enabled)
-```bash
-flutter build web --release
-```
-
-## 🧪 Testing
-
-Run the test suite:
-```bash
-flutter test
-```
-
-Check code quality:
-```bash
-flutter analyze
-```
-
-## 📱 Supported Platforms
-
-- ✅ **Android** (API 21+)
-- ✅ **iOS** (iOS 12+)
-- 🔄 **Web** (can be enabled)
-- 🔄 **Desktop** (can be enabled)
+The app follows clean architecture principles with:
+- **Models**: Data structures for questions and quiz results
+- **Providers**: State management using Provider pattern
+- **Services**: Database operations and business logic
+- **Screens**: UI screens for different app states
+- **Widgets**: Reusable UI components
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Run `flutter analyze` and `flutter test`
-6. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -234,4 +94,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Note**: ITIL® is a registered trademark of AXELOS Limited. This app is for educational purposes only and is not officially endorsed by AXELOS. 
+**Note**: ITIL® is a registered trademark of AXELOS Limited. This app is for educational purposes only and is not officially endorsed by AXELOS.
