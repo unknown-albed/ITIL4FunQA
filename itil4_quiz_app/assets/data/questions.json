@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "What is the primary purpose of the ITIL Service Value System (SVS)?",
+      "options": [
+        "To provide a framework for IT service management",
+        "To ensure services continually co-create value with all stakeholders",
+        "To define the organizational structure for IT teams",
+        "To establish service level agreements"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The ITIL Service Value System (SVS) ensures that the organization continually co-creates value with all stakeholders through the use and management of products and services."
+    },
+    {
+      "id": 2,
+      "questionText": "Which of the following is NOT one of the four dimensions of service management?",
+      "options": [
+        "Organizations and people",
+        "Information and technology",
+        "Partners and suppliers",
+        "Processes and procedures"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "The four dimensions are: Organizations and people, Information and technology, Partners and suppliers, and Value streams and processes (not 'Processes and procedures')."
+    },
+    {
+      "id": 3,
+      "questionText": "What does the 'Continual Improvement' practice primarily focus on?",
+      "options": [
+        "Fixing immediate service issues",
+        "Aligning practices and services with changing business needs",
+        "Managing service requests",
+        "Monitoring system performance"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Continual Improvement focuses on aligning the organization's practices and services with changing business needs through the ongoing identification and improvement of services."
+    },
+    {
+      "id": 4,
+      "questionText": "In ITIL 4, what is the definition of a 'service'?",
+      "options": [
+        "A software application used by customers",
+        "A means of enabling value co-creation by facilitating outcomes customers want to achieve",
+        "A technical solution provided by IT",
+        "A contract between service provider and customer"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A service is a means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks."
+    },
+    {
+      "id": 5,
+      "questionText": "Which ITIL guiding principle recommends using services, processes, tools, and people that already exist?",
+      "options": [
+        "Focus on value",
+        "Start where you are",
+        "Progress iteratively with feedback",
+        "Keep it simple and practical"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 'Start where you are' principle recommends using existing services, processes, tools, and people, and building on what is already available rather than starting over."
+    }
+  ]
+}
