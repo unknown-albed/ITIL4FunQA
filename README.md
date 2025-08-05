@@ -29,18 +29,25 @@ A modern Flutter mobile quiz application for testing ITIL® 4 Foundation knowled
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 📱 **Quick Install (Users)**
+- **Android**: [Download APK](https://github.com/unknown-albed/ITIL4FunQA/releases/latest/download/app-release.apk)
+- **Web**: [Use in Browser](https://unknown-albed.github.io/ITIL4FunQA/) *(Coming Soon)*
+- **Full Guide**: [Installation Instructions](INSTALLATION.md)
+
+### 🛠️ **Development Setup**
+
+#### Prerequisites
 - Flutter SDK (3.5.4+)
 - Dart SDK
 - Android Studio / VS Code with Flutter extensions
 - iOS development tools (for iOS deployment)
 
-### Installation
+#### Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/itil4-foundation-quiz.git
-   cd itil4-foundation-quiz
+   git clone https://github.com/unknown-albed/ITIL4FunQA.git
+   cd ITIL4FunQA
    ```
 
 2. **Install dependencies**:
