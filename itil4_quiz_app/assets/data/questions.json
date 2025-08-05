@@ -2,63 +2,483 @@
   "questions": [
     {
       "id": 1,
-      "questionText": "What is the primary purpose of the ITIL Service Value System (SVS)?",
+      "questionText": "What is the output of the SVS?",
       "options": [
-        "To provide a framework for IT service management",
-        "To ensure services continually co-create value with all stakeholders",
-        "To define the organizational structure for IT teams",
-        "To establish service level agreements"
+        "System Validation",
+        "Value",
+        "Return On Investment",
+        "Restoration Of Service"
       ],
       "correctAnswerIndex": 1,
-      "explanation": "The ITIL Service Value System (SVS) ensures that the organization continually co-creates value with all stakeholders through the use and management of products and services."
+      "explanation": "The Service Value System (SVS) is designed to create value. Value is the primary output of the SVS, representing the perceived benefits, usefulness and importance of something to stakeholders."
     },
     {
       "id": 2,
-      "questionText": "Which of the following is NOT one of the four dimensions of service management?",
+      "questionText": "The Purpose of the Service Desk ...?",
       "options": [
-        "Organizations and people",
-        "Information and technology",
-        "Partners and suppliers",
-        "Processes and procedures"
+        "is to capture demand for incident resolution and problems",
+        "is to capture demand for incident resolution and service requests",
+        "is to capture demand for incident resolution and changes",
+        "is to capture demand for changes and problems"
       ],
-      "correctAnswerIndex": 3,
-      "explanation": "The four dimensions are: Organizations and people, Information and technology, Partners and suppliers, and Value streams and processes (not 'Processes and procedures')."
+      "correctAnswerIndex": 1,
+      "explanation": "The Service Desk is the single point of contact between the service provider and users. It captures demand for incident resolution and service requests, providing a clear channel for users to report issues and request services."
     },
     {
       "id": 3,
-      "questionText": "What does the 'Continual Improvement' practice primarily focus on?",
+      "questionText": "Which statement about the relationship of Service Request Management to Value Chain Activities is correct?",
       "options": [
-        "Fixing immediate service issues",
-        "Aligning practices and services with changing business needs",
-        "Managing service requests",
-        "Monitoring system performance"
+        "Service Request Management has no involvement with Obtain/Build",
+        "Service request Management may contribute Incident causes to Design and Transition",
+        "Service request Management may contribute Incident causes to Improvement",
+        "Service Request Management's involvement with Obtain/Build is that service requests may require acquisition of pre-approved service components"
       ],
-      "correctAnswerIndex": 1,
-      "explanation": "Continual Improvement focuses on aligning the organization's practices and services with changing business needs through the ongoing identification and improvement of services."
+      "correctAnswerIndex": 3,
+      "explanation": "Service Request Management may need to work with Obtain/Build when service requests require the acquisition of pre-approved service components or resources to fulfill the request."
     },
     {
       "id": 4,
-      "questionText": "In ITIL 4, what is the definition of a 'service'?",
+      "questionText": "What is defined as the \"ability of an IT service or other configuration item to perform its agreed function when required?\"",
       "options": [
-        "A software application used by customers",
-        "A means of enabling value co-creation by facilitating outcomes customers want to achieve",
-        "A technical solution provided by IT",
-        "A contract between service provider and customer"
+        "Performance",
+        "Availability",
+        "Security",
+        "IT Asset"
       ],
       "correctAnswerIndex": 1,
-      "explanation": "A service is a means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks."
+      "explanation": "Availability is defined as the ability of an IT service or other configuration item to perform its agreed function when required. This is a key measure of service quality."
     },
     {
       "id": 5,
-      "questionText": "Which ITIL guiding principle recommends using services, processes, tools, and people that already exist?",
+      "questionText": "Once designed, Value Streams should:",
       "options": [
-        "Focus on value",
-        "Start where you are",
-        "Progress iteratively with feedback",
-        "Keep it simple and practical"
+        "Not improved until the next full audit review",
+        "Only improved if an issue is identified",
+        "Improved continually",
+        "Not improved at all"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Value Streams should be improved continually. Continual improvement is a core principle of ITIL 4, ensuring that value streams evolve and adapt to changing business needs and opportunities for enhancement."
+    },
+    {
+      "id": 6,
+      "questionText": "The Problem management practice contributes to the Deliver & Support Value Chain Activity by:",
+      "options": [
+        "preventing incident repetition and supporting timely incident resolution",
+        "by preventing incident causes and supporting quality incident resolution",
+        "by preventing all incidents, thereby reducing the importance of the Incident Management practice",
+        "by preventing all incidents, thereby reducing the importance of the Change Control practice"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Problem Management contributes to Deliver & Support by preventing incident repetition and supporting timely incident resolution through root cause analysis and the management of known errors and workarounds."
+    },
+    {
+      "id": 7,
+      "questionText": "Dealing with stakeholders outside the organisation's Value Chain always involves which activity?",
+      "options": [
+        "Plan",
+        "Improve",
+        "Obtain & Build",
+        "Engage"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "The Engage activity is specifically focused on providing a good understanding of stakeholder needs and ensuring continual engagement and good relationships with all stakeholders, especially those outside the organization's value chain."
+    },
+    {
+      "id": 8,
+      "questionText": "What is the description of the skill set of the ideal staff member?",
+      "options": [
+        "U-Shaped",
+        "T-Shaped",
+        "I-Shaped",
+        "Ship-Shaped"
       ],
       "correctAnswerIndex": 1,
-      "explanation": "The 'Start where you are' principle recommends using existing services, processes, tools, and people, and building on what is already available rather than starting over."
+      "explanation": "T-Shaped skills refer to having deep knowledge in one area (the vertical stroke of the T) combined with broad knowledge across multiple disciplines (the horizontal stroke), making individuals more versatile and collaborative."
+    },
+    {
+      "id": 9,
+      "questionText": "Known Errors are?",
+      "options": [
+        "Incidents that have had their cause identified",
+        "Problems that are awaiting identification",
+        "A problem that has been analysed and has not been resolved",
+        "Problems that have had Changes raised against them"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "A Known Error is a problem that has been analysed and has not been resolved. The root cause is understood, but a permanent solution has not yet been implemented, often requiring workarounds."
+    },
+    {
+      "id": 10,
+      "questionText": "How may the Service Desk be delivered?",
+      "options": [
+        "With Full/Part-Time Staff",
+        "Using A Virtual Approach",
+        "With Mixed Teams",
+        "There Is No 'Right Way'"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "There is no single 'right way' to deliver a Service Desk. Organizations can use various approaches including full/part-time staff, virtual approaches, mixed teams, or combinations depending on their specific needs and context."
+    },
+    {
+      "id": 11,
+      "questionText": "Which Value Chain Activity has the purpose of ensuring \"a shared understanding of the vision, current status and improvement direction for all four dimensions and all products and services across the organization\"?",
+      "options": [
+        "Plan",
+        "Improve",
+        "Engage",
+        "Design and transition"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "The Plan activity ensures a shared understanding of the vision, current status, and improvement direction for all four dimensions and all products and services across the organization."
+    },
+    {
+      "id": 12,
+      "questionText": "The purpose of the ______________ practice is to make new and changed services and features available for use.",
+      "options": [
+        "Information Security Management Practice",
+        "Project Management Practice",
+        "Monitoring & Event Management Practice",
+        "Release Management Practice"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Release Management Practice is responsible for making new and changed services and features available for use. It ensures that releases are properly planned, tested, and deployed to live environments."
+    },
+    {
+      "id": 13,
+      "questionText": "Name the Four dimensions of Service Management.",
+      "options": [
+        "Organisations & people, Information & technology, partners & suppliers, value streams & processes",
+        "Value streams & processes, organizations & technology, partners & resources, costs & benefits",
+        "Value, outcomes, costs & risks",
+        "Budgeting, accounting, charging & value on investment"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "The four dimensions of Service Management are: Organizations & people, Information & technology, Partners & suppliers, and Value streams & processes. These dimensions ensure a holistic approach to service management."
+    },
+    {
+      "id": 14,
+      "questionText": "What is this a definition of? \"The perceived benefits, usefulness and importance of something.\"",
+      "options": [
+        "Costs",
+        "Risks",
+        "Value",
+        "Governance"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Value is defined as the perceived benefits, usefulness and importance of something. Value is subjective and can vary between different stakeholders based on their perspective and needs."
+    },
+    {
+      "id": 15,
+      "questionText": "Which statement about the relationship of Change Control and Incident Management is true?",
+      "options": [
+        "Every Incident has occurred because something has changed, therefore formal Changes always cause Incidents",
+        "Incidents are planned outages, therefore formal Changes always cause Incidents",
+        "Incidents are unplanned outages, therefore formal Changes are not the same thing as Incidents",
+        "The resolution of Incidents cannot involve formal Change Control, as that would make them Problems"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Incidents are unplanned interruptions or reductions in quality of service, while formal Changes are planned. Therefore, formal Changes are not the same as Incidents, though Changes may sometimes cause Incidents."
+    },
+    {
+      "id": 16,
+      "questionText": "What is this a definition of? \"A person or a group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives.\"",
+      "options": [
+        "A Team",
+        "A Function",
+        "A Process",
+        "An Organisation"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "An Organization is defined as a person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."
+    },
+    {
+      "id": 17,
+      "questionText": "Analysing causes is an activity of which phase of Problem management?",
+      "options": [
+        "Problem Identification",
+        "Problem Mitigation",
+        "Error Control",
+        "Problem Control"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Analysing causes is an activity of Problem Control. This phase involves investigating and analyzing problems to understand their root causes and develop appropriate solutions."
+    },
+    {
+      "id": 18,
+      "questionText": "Why are Incidents Categorised?",
+      "options": [
+        "Because priority needs to be determined",
+        "Because root cause needs to be determined",
+        "To identify the correct team to escalate to",
+        "To enable impact to be determined"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Incidents are categorized to identify the correct team to escalate to. Categorization helps route incidents to the appropriate support groups based on their type and the skills required for resolution."
+    },
+    {
+      "id": 19,
+      "questionText": "Which of the following statements about Incident Management is true?",
+      "options": [
+        "Every Incident must be resolved immediately",
+        "Every Incident must have its cause determined",
+        "Every Incident must be resolved in less than the target time",
+        "Every Incident must be managed in line with agreed, realistic targets"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Every Incident must be managed in line with agreed, realistic targets. While speed is important, targets should be realistic and achievable, balancing urgency with quality of resolution."
+    },
+    {
+      "id": 20,
+      "questionText": "Which Value Chain Activity has an output of \"knowledge and information about new and changed products and services to all value chain activities\"?",
+      "options": [
+        "Design and Deliver",
+        "Deliver and Support",
+        "Design and Transition",
+        "Transition and Support"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Design and Transition provides knowledge and information about new and changed products and services to all value chain activities, ensuring everyone has the information needed to support these services."
+    },
+    {
+      "id": 21,
+      "questionText": "What are the three phases of Problem Management?",
+      "options": [
+        "Problem Resolution, Problem Solving, Problem Eradication",
+        "Problem Identification, Problem Control, Error Control",
+        "Problem Resistance, Problem Recovery, Problem Fixing",
+        "Problem Review, Problem identification, Problem analysis"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The three phases of Problem Management are: Problem Identification (detecting and logging problems), Problem Control (investigating and analyzing), and Error Control (managing known errors and workarounds)."
+    },
+    {
+      "id": 22,
+      "questionText": "What is the definition of an Event?",
+      "options": [
+        "any change of state that has significance for the management of a service value chain",
+        "any change of state that has significance for the management of a service or other configuration item",
+        "any change of state that has significance for the management of a service value system",
+        "any change of state that has significance for the management of a service's value"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "An Event is defined as any change of state that has significance for the management of a service or other configuration item. Events can be indicators of normal operation or potential issues."
+    },
+    {
+      "id": 23,
+      "questionText": "Which of the following statements is most correct?",
+      "options": [
+        "Value is subjective and is influenced by factors such as financial cost, perceptions, previous experiences, speed, ease of use, safety etc",
+        "Value is purely objective and can only be measured by money spent and made",
+        "Value can only be provided by the service provider to the customer",
+        "Value is the responsibility of the customer to provide to the users"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Value is subjective and influenced by many factors including financial cost, perceptions, previous experiences, speed, ease of use, and safety. Different stakeholders may perceive value differently."
+    },
+    {
+      "id": 24,
+      "questionText": "Service Requests should …?",
+      "options": [
+        "Not be automated, as they are all different",
+        "Should all be automated",
+        "Be automated to the greatest degree possible",
+        "Should be automated only if they trigger other processes, such as Change Control"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Service Requests should be automated to the greatest degree possible. Automation improves efficiency, reduces errors, and provides faster service to users while freeing up staff for more complex tasks."
+    },
+    {
+      "id": 25,
+      "questionText": "Service desk staff require training and competency in several areas, especially which customer service skills?",
+      "options": [
+        "Empathy, Incident analysis, Incident prioritization, Effective communications, Emotional intelligence",
+        "Socialising, categorisation, prioritisation, conflict analysis, root cause analysis",
+        "Change assessment, major problem reviews, customer service review meetings, supplier management",
+        "Metrics analysis, time management skills, negotiation skills, team leadership skills"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Service desk staff need customer service skills including empathy, incident analysis, incident prioritization, effective communications, and emotional intelligence to effectively support users and resolve their issues."
+    },
+    {
+      "id": 26,
+      "questionText": "What is this a definition of? \"A means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks.\"",
+      "options": [
+        "A Service",
+        "Service Management",
+        "Supplier Management",
+        "Service Continuity Management"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "A Service is defined as a means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks."
+    },
+    {
+      "id": 27,
+      "questionText": "Which is the correct set of statements about the Change Authority? 1. The Change Authority is always the chairperson of the CAB 2. The Change Authority can be embedded into automation 3. The Change Authority should be assigned for each type of Change 4. The Change Authority for each type of Change should be regularly be reviewed",
+      "options": [
+        "Items 1, 2 and 3",
+        "Items 1, 2 and 4",
+        "Items 2, 3 and 4",
+        "Items 1, 3 and 4"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Items 2, 3 and 4 are correct. The Change Authority can be embedded into automation, should be assigned for each type of change, and should be regularly reviewed. Item 1 is incorrect as the Change Authority is not always the CAB chairperson."
+    },
+    {
+      "id": 28,
+      "questionText": "What type of model is the Service Value System (SVS)?",
+      "options": [
+        "Sense-Making Model",
+        "Operational Model",
+        "Organisational Model",
+        "Resource Model"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The Service Value System (SVS) is an Organisational Model. It describes how all the components and activities of an organization work together to enable value creation."
+    },
+    {
+      "id": 29,
+      "questionText": "What is this a definition of? \"A description of one or more services, designed to address the needs of a target consumer group\".",
+      "options": [
+        "Service Outage",
+        "Strategy Management",
+        "Service Result",
+        "Service Offerings"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Service Offerings are descriptions of one or more services designed to address the needs of a target consumer group. They represent what the service provider makes available to consumers."
+    },
+    {
+      "id": 30,
+      "questionText": "What document should be 'widely published and produced' so everyone is aware of changes that have been logged, and are coming up for discussion?",
+      "options": [
+        "Project Plan",
+        "Release Plan",
+        "Deployment Plan",
+        "Change Schedule"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "The Change Schedule should be widely published so everyone is aware of changes that have been logged and are coming up for discussion. This ensures transparency and proper communication about upcoming changes."
+    },
+    {
+      "id": 31,
+      "questionText": "What is this a definition of? \"A cause, or potential cause, of one or more incidents.\"",
+      "options": [
+        "A Service Disruption",
+        "A Service Interruption",
+        "An Incident",
+        "A Problem"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "A Problem is defined as a cause, or potential cause, of one or more incidents. Problems are the underlying issues that need to be identified and resolved to prevent incident recurrence."
+    },
+    {
+      "id": 32,
+      "questionText": "What is this a description of? \"A tangible or intangible deliverable of an activity\".",
+      "options": [
+        "Outcome",
+        "Output",
+        "Utility",
+        "Warranty"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "An Output is a tangible or intangible deliverable of an activity. Outputs are what activities produce, while outcomes are the results that stakeholders experience from these outputs."
+    },
+    {
+      "id": 33,
+      "questionText": "Service Offerings may include?",
+      "options": [
+        "Goods, access to resources and service actions",
+        "Resources, assets, and capabilities",
+        "Service consumption, service provision, and service relationships",
+        "Value realisation, value loss and profit realisation"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Service Offerings may include goods (ownership transferred to consumer), access to resources (shared access), and service actions (performed by the provider). These represent different ways value can be delivered."
+    },
+    {
+      "id": 34,
+      "questionText": "Which of these is NOT a guiding principle?",
+      "options": [
+        "Focus On Value",
+        "Start Where You Are",
+        "Adopt An Agile Mentality",
+        "Progress Iteratively With Feedback"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "\"Adopt An Agile Mentality\" is NOT one of the seven ITIL 4 guiding principles. The seven principles are: Focus on Value, Start Where You Are, Progress Iteratively with Feedback, Collaborate and Promote Visibility, Think and Work Holistically, Keep It Simple and Practical, and Optimize and Automate."
+    },
+    {
+      "id": 35,
+      "questionText": "What are the six Value Chain Activities?",
+      "options": [
+        "Plan, support, enable, create, deliver, restore",
+        "Support, repair, restore, enhance, enable, retire",
+        "Plan, improve, engage, design & transition, obtain & build, deliver & support",
+        "Strategy, design, transition, operation, continual improvement, enhancement"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The six Value Chain Activities are: Plan, Improve, Engage, Design & Transition, Obtain & Build, and Deliver & Support. These activities represent the key activities that organizations perform to create value."
+    },
+    {
+      "id": 36,
+      "questionText": "What are the three types of change referred to by ITIL?",
+      "options": [
+        "Standard – Retrospective – Emergency",
+        "Normal – Retrospective – Emergency",
+        "Standard – Normal – Emergency",
+        "Emergency – Planned - Normal"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The three types of change in ITIL are: Standard (pre-authorized, low-risk changes), Normal (changes that require authorization), and Emergency (changes that must be implemented urgently)."
+    },
+    {
+      "id": 37,
+      "questionText": "Which word is missing from the following purpose of a practice? \"minimize the negative impact of [...] by restoring normal service operation as quickly as possible\"",
+      "options": [
+        "Problems",
+        "Incidents",
+        "CIs",
+        "Security"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The missing word is \"Incidents\". This is the purpose of Incident Management: to minimize the negative impact of incidents by restoring normal service operation as quickly as possible."
+    },
+    {
+      "id": 38,
+      "questionText": "The purpose of the _____________ practice is to move new or changed hardware, software, documentation, processes, or any other component to live environments. It may also be involved in deploying components to other environments for testing or staging.",
+      "options": [
+        "Incident Management Practice",
+        "Problem Management Practice",
+        "Service Request Management Practice",
+        "Deployment Management Practice"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Deployment Management Practice is responsible for moving new or changed components to live environments and may also deploy components to testing or staging environments."
+    },
+    {
+      "id": 39,
+      "questionText": "Which of the following are correct Dimensions of Service Management? 1. Information and people 2. Information and technology 3. Value streams and people 4. Value streams and processes",
+      "options": [
+        "Items 1 & 2",
+        "Items 2 & 3",
+        "Items 1 & 4",
+        "Items 2 & 4"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Items 2 & 4 are correct dimensions: \"Information and technology\" and \"Value streams and processes\" are two of the four dimensions of service management. The other two are \"Organizations and people\" and \"Partners and suppliers\"."
+    },
+    {
+      "id": 40,
+      "questionText": "An organisation has a responsibility for the care and control of its hardware, software, people, and any other element involved in providing and maintaining services. Which practice is responsible for this?",
+      "options": [
+        "IT Asset Management Practice",
+        "Change Enablement Practice",
+        "Service Configuration Management Practice",
+        "Service Portfolio Management Practice"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IT Asset Management Practice is responsible for the care and control of hardware, software, people, and any other elements involved in providing and maintaining services. This includes planning and managing the full lifecycle of IT assets."
     }
   ]
 }
