@@ -55,17 +55,29 @@ flutter build apk --release
 
 ### **Method 2: Build from Source (Requires macOS)**
 
+📖 **[📱 Complete iOS Build Guide](iOS_BUILD_GUIDE.md)** - Detailed step-by-step instructions
+
+**Quick Start:**
 ```bash
 # Prerequisites: macOS, Xcode, Flutter SDK
 git clone https://github.com/unknown-albed/ITIL4FunQA.git
 cd ITIL4FunQA
 flutter pub get
-flutter build ios --release
 
-# Open in Xcode:
+# For simulator testing:
+flutter run -d ios
+
+# For device installation:
+flutter build ios --release
 open ios/Runner.xcworkspace
-# Then build and install to your device
+# Configure signing in Xcode, then build & run
 ```
+
+**Need help?** Check the [detailed iOS build guide](iOS_BUILD_GUIDE.md) for:
+- ✅ Complete prerequisites setup
+- ✅ Step-by-step Xcode configuration
+- ✅ Troubleshooting common issues
+- ✅ App Store distribution guide
 
 ### **Method 3: Use Web Version**
 iPhone users can use the web version in Safari for the full experience.

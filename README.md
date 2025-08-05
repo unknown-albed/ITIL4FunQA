@@ -31,6 +31,7 @@ A modern Flutter mobile quiz application for testing ITIL® 4 Foundation knowled
 
 ### 📱 **Quick Install (Users)**
 - **Android**: [Download APK](https://github.com/unknown-albed/ITIL4FunQA/releases/latest/download/app-release.apk)
+- **iOS**: [Build from Source Guide](iOS_BUILD_GUIDE.md)
 - **Web**: [Use in Browser](https://unknown-albed.github.io/ITIL4FunQA/) *(Coming Soon)*
 - **Full Guide**: [Installation Instructions](INSTALLATION.md)
 
