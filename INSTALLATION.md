@@ -11,7 +11,9 @@
 🍎 iOS version requires Apple Developer Account. Web version available for iPhone users.
 
 ### **Web Version (All Devices)**
-🌐 **[Use in Browser](https://unknown-albed.github.io/ITIL4FunQA/)** *(Coming Soon)*
+🌐 **[Use in Browser](https://unknown-albed.github.io/ITIL4FunQA/)** - **Live Now!**
+
+📖 **[Complete Web Guide](WEB_DEPLOYMENT_GUIDE.md)** - PWA installation & features
 
 ---
 
@@ -87,11 +89,12 @@ iPhone users can use the web version in Safari for the full experience.
 ## 🌐 **Web Version (All Devices)**
 
 ### **Access Online**
-- **URL**: https://unknown-albed.github.io/ITIL4FunQA/ *(Coming Soon)*
+- **URL**: https://unknown-albed.github.io/ITIL4FunQA/ - **Live Now!** 🎉
 - Works on any device with a web browser
 - No installation required
 - Same features as mobile apps
 - Offline capable after first load
+- **PWA Support**: Install as native app on any device
 
 ### **Run Locally**
 ```bash

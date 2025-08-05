@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ITIL 4 Foundation Quiz App - Test your ITIL knowledge with 40 practice questions, instant feedback, and detailed explanations. Perfect for certification preparation.">
+  <meta name="keywords" content="ITIL, ITIL 4, Foundation, Quiz, Certification, Practice Questions, Service Management, IT Service Management">
+  <meta name="author" content="ITIL 4 Foundation Quiz App">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="ITIL® 4 Foundation Quiz App">
+  <meta property="og:description" content="Master ITIL 4 Foundation concepts with 40 practice questions, instant feedback, and detailed explanations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unknown-albed.github.io/ITIL4FunQA/">
+  <meta property="og:image" content="icons/Icon-512.png">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ITIL® 4 Foundation Quiz App">
+  <meta name="twitter:description" content="Master ITIL 4 Foundation concepts with 40 practice questions, instant feedback, and detailed explanations.">
+  <meta name="twitter:image" content="icons/Icon-512.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ITIL 4 Quiz">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ITIL® 4 Foundation Quiz App - Practice Questions & Certification Prep</title>
+  <link rel="manifest" href="manifest.json">
+  
+  <style>
+    /* Loading screen styles */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .loading h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .loading p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      opacity: 0.9;
+    }
+    
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top: 4px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+      text-align: left;
+    }
+    
+    .features li {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .features li:before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading" class="loading">
+    <h1>🎓 ITIL® 4 Foundation Quiz</h1>
+    <p>Loading your practice questions...</p>
+    <ul class="features">
+      <li>40 Professional Practice Questions</li>
+      <li>Instant Feedback & Explanations</li>
+      <li>Timer & Progress Tracking</li>
+      <li>Light/Dark Theme Support</li>
+      <li>Complete Offline Functionality</li>
+    </ul>
+    <div class="spinner"></div>
+  </div>
+  
+  <script>
+    // Hide loading screen when Flutter app loads
+    window.addEventListener('flutter-first-frame', function () {
+      const loading = document.querySelector('#loading');
+      if (loading) {
+        loading.remove();
+      }
+    });
+  </script>
+  
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
